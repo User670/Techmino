@@ -66,4 +66,6 @@ function love.conf(t)
     M.graphics,M.font,M.image=true,true,true
     M.mouse,M.touch,M.keyboard,M.joystick=true,true,true,true
     M.physics=false
+    
+    t.externalstorage=true --attempt to make game save data in """external storage"""
 end
