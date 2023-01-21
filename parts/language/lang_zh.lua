@@ -1,5 +1,5 @@
 local C=COLOR
-return {
+local translation={
     loadText={
         loadSFX="加载音效资源",
         loadSample="加载乐器采样",
@@ -1362,3 +1362,5 @@ return {
     },
     pumpkin="我是南瓜",
 }
+translation_json=json.encode(translation)
+return translation
