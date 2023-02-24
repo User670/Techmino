@@ -26,6 +26,8 @@ function love.conf(t)
         t.audio.mic=false
         t.audio.mixwithsystem=true
     end
+    
+    t.externalstorage=true
 
     local M=t.modules
     M.window,M.system,M.event,M.thread=true,true,true,true
