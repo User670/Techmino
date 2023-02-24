@@ -2,10 +2,10 @@ name: Techmino CI
 
 on:
   push:
-    branches: [main, ci*]
+    branches: [main, ci*, user670*]
     tags: [pre*, v*]
   pull_request:
-    branches: [main]
+    branches: [main, user670*]
 
 env:
   BUILD_TYPE: ${{ fromJSON('["dev", "release"]')[startsWith(github.ref, 'refs/tags/v')] }}
